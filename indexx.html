@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gym</title>
+  <link rel="stylesheet" href="styyle.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>My Gym</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="featured">
+    <div class="container">
+      <h2>Featured Classes</h2>
+      <div class="class">
+        <img src="box7_image.jpg" alt="Class 1">
+        <h3>Cardio Kickboxing</h3>
+        <p>Join our high-intensity cardio kickboxing class to boost your endurance and burn calories.</p>
+      </div>
+      <div class="class">
+        <img src="box5_image.jpg" alt="Class 2">
+        <h3>Strength Training</h3>
+        <p>Build strength and tone your muscles with our effective strength training sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="container">
+      <h2>Class Schedule</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Class</th>
+          <th>Staff</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>7:00 AM</td>
+          <td>Cardio Kickboxing</td>
+          <td>Aman Singh(Chotu)</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>5:30 PM</td>
+          <td>Strength Training</td>
+          <td>Aman Singh(Lambu)</td>
+        </tr>
+        <!-- Add more rows for additional classes and days -->
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to join a class? Contact us!</p>
+      <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 My Gym. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
